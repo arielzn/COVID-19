@@ -11,9 +11,9 @@ DEADCSV = "../csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_d
 
 STATE = 'Belgium'
 #STATE = 'Italy'
+#STATE = 'Spain'
 #STATE = 'France'
 #STATE = 'Germany'
-#STATE = 'Spain'
 
 CASES_ZERO_DAY = 50
 
@@ -119,5 +119,5 @@ if __name__ == "__main__":
 
     plt.tight_layout()
     figfile='covid_evolution_{0}.png'.format(STATE)
-    plt.savefig(figfile, dpi=fdpi*2)
+    plt.savefig(figfile, dpi=fdpi*1.5)
     plt.show()
